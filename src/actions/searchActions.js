@@ -26,7 +26,7 @@ export const fetchMovies = text => {
         if(text != '' && text != null){
             dispatch(startRequest());
              try{
-                const {data} = await axios.get(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${text}`);
+                const {data} = await axios.get(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${text}`);
                 const {Search} = data;
                 if(Search){
                     dispatch({
