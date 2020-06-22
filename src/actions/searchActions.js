@@ -54,7 +54,7 @@ export const fetchMovie = id => {
 
         })
         try{
-            const {data} = await axios.get(`http://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`);
+            const {data} = await axios.get(`https://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`);
             dispatch({
                 type: FETCH_MOVIE,
                 payload : data
