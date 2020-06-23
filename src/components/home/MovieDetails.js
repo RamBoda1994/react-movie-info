@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import { fetchMovie } from '../../actions/searchActions';
 import Spinner from '../layout/Spinner';
+import {Link} from 'react-router-dom';
 
 class MovieDetails extends React.Component {
 
@@ -48,6 +49,7 @@ class MovieDetails extends React.Component {
                         <h6>{this.props.movie.Production}</h6>
                     </div>
                 </div>
+                <Link style={{height:"40px"}} className="btn btn-link" to="/" >Back</Link>
             </div>    
         )
         
